@@ -3,9 +3,255 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ecommerce site</title>
+    <title>Ecommerce Site</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="estilosGeneral.css"> 
 </head>
 <body>
-    <h1>Hi</h1>
+    
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg" style="background-color: #ebecec;">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="./imgs/logo3.jpg" alt="Logo de la marca" style="height: 70px; border-radius: 50px; margin-right: 100px;">
+            </a>
+
+            <!-- Navbar Items -->
+            <div class="collapse navbar-collapse justify-content-evenly" id="navbarNav">
+                <ul class="navbar-nav w-100 justify-content-evenly">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Comprar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                    <!-- Icons -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-search"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-user"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i></a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-search"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-person"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-cart"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+     <!-- Hero Section -->
+     <section class="hero-section">
+        <!-- Left Side -->
+        <div class="hero-left">
+            <h1 class="hero-title">Nueva colección de invierno</h1>
+            <a href="#" class="hero-button">Comprar ahora</a>
+        </div>
+        
+        <!-- Right Side -->
+        <div class="hero-right">
+            <img class="heroImage" src="/imgs/HeroImage.png" alt="Nueva colección de invierno">
+        </div>
+    </section>
+
+    <!-- Image Section -->
+    <section class="image-section">
+        <img src="imgs/abrigos-hombre 1.png" alt="Abrigos Hombre 1" class="image-large">
+        <img src="imgs/AbrigoHombre2.png" alt="Abrigos Hombre 2" class="image-small">
+    </section>
+
+
+
+    <!-- Main Content -->
+    <main class="container my-5">
+        <h2 class="text-center">Productos preferidos</h2>
+        <!-- Example product cards -->
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="imgs/image-product.png" class="card-img-top" alt="Product Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Nombre Producto</h5>
+                        <p class="card-text">Breve descripcion</p>
+                        <p class="card-text">$ 59.99</p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="imgs/image-product.png" class="card-img-top" alt="Product Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Nombre Producto</h5>
+                        <p class="card-text">Breve descripcion</p>
+                        <p class="card-text">$ 59.99</p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="imgs/image-product.png" class="card-img-top" alt="Product Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Nombre Producto</h5>
+                        <p class="card-text">Breve descripcion</p>
+                        <p class="card-text">$ 59.99</p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="imgs/image-product.png" class="card-img-top" alt="Product Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Nombre Producto</h5>
+                        <p class="card-text">Breve descripcion</p>
+                        <p class="card-text">$ 59.99</p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <section class="hogar-section">
+        <!-- Title -->
+        <div class="container my-5">
+            <h2 class="hogar-title text-center">Sección Hogar</h2>
+        </div>
+    
+        <!-- Image with Overlay Text -->
+        <div class="hogar-image-wrapper position-relative">
+            <img src="imgs/sala1.png" alt="Sala Hogar" class="w-100 hogar-image">
+            
+            <!-- Overlay Rectangle -->
+            <div class="hogar-overlay position-absolute">
+                <h3 class="hogar-overlay-title">Dele estilo a su hogar</h3>
+                <a href="#" class="hogar-overlay-button">Comprar ahora</a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Main Content -->
+    <main class="container my-5">
+        <h2 class="text-center">Productos hogar preferidos</h2>
+        <!-- Example product cards -->
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="imgs/image-product.png" class="card-img-top" alt="Product Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Nombre Producto</h5>
+                        <p class="card-text">Breve descripcion</p>
+                        <p class="card-text">$ 59.99</p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="imgs/image-product.png" class="card-img-top" alt="Product Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Nombre Producto</h5>
+                        <p class="card-text">Breve descripcion</p>
+                        <p class="card-text">$ 59.99</p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="imgs/image-product.png" class="card-img-top" alt="Product Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Nombre Producto</h5>
+                        <p class="card-text">Breve descripcion</p>
+                        <p class="card-text">$ 59.99</p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="imgs/image-product.png" class="card-img-top" alt="Product Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Nombre Producto</h5>
+                        <p class="card-text">Breve descripcion</p>
+                        <p class="card-text">$ 59.99</p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-start">
+                <!-- Left Side -->
+                <div>
+                    <!-- Logo -->
+                    <img src="imgs/logo3.jpg" alt="E-Shop Logo" style="height: 75px; border-radius: 50px;">
+                    <!-- Social Media Icons -->
+                    <div class="d-flex mt-3">
+                        <a href="#" class="text-white me-3" style="font-size: 20px;"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white me-3" style="font-size: 20px;"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-white" style="font-size: 20px;"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+    
+                <!-- Right Side -->
+                <div class="d-flex">
+                    <!-- First Column -->
+                    <div class="me-5">
+                        <h5>Catálogo</h5>
+                        <ul class="list-unstyled">
+                            <li>Hogar</li>
+                            <li>Vestimenta</li>
+                        </ul>
+                    </div>
+                    <!-- Second Column -->
+                    <div>
+                        <h5>Sobre Nosotros</h5>
+                        <ul class="list-unstyled">
+                            <li>Preguntas Frecuentes</li>
+                            <li>Contacto</li>
+                            <li>Opciones de Pago</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
 </body>
 </html>
