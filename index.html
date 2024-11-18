@@ -29,13 +29,13 @@
             <div class="collapse navbar-collapse justify-content-evenly" id="navbarNav">
                 <ul class="navbar-nav w-100 justify-content-evenly">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Inicio</a>
+                        <a class="nav-link" href="index.html" data-translate="Inicio">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="compras.html">Comprar</a>
+                        <a class="nav-link" href="compras.html" data-translate="Comprar">Comprar</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contacto.html">Contacto</a>
+                        <a class="nav-link" href="contacto.html" data-translate="Contacto">Contacto</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="inventario.html">Inventario</a>
@@ -68,6 +68,12 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#"><i class="bi bi-cart"></i></a>
                     </li>
+
+                    <li class="nav-item">
+                        <button class="btn btn-link nav-link" id="languageSwitcher">
+                            <i class="fas fa-globe"></i> <span id="currentLanguage">ES</span>
+                        </button>
+                    </li>
                 </ul>
             
     </nav>
@@ -75,30 +81,33 @@
     <!-- Modal -->
     <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
         <div class="modal-dialog">
+            
             <div class="modal-content">
+                <h5> Aca se realizará la validación de usuarios a traves de PHP y la informacion que viene de la base de datos</h5>
                 <div class="modal-header">
-                    <h5 class="modal-title" id="registerModalLabel">Registrar Usuario</h5>
+                    
+                    <h5 class="modal-title" id="registerModalLabel" data-translate="RegistrarUsuario">Registrar Usuario</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <form id="registerForm">
                         <div class="mb-3">
-                            <label for="name" class="form-label">Nombre</label>
-                            <input type="text" class="form-control" id="name" placeholder="Ingrese su nombre" required>
+                            <label for="name" class="form-label" data-translate="Name">Nombre</label>
+                            <input type="text" class="form-control" id="name"  required>
                         </div>
                         <div class="mb-3">
-                            <label for="username" class="form-label">Usuario</label>
-                            <input type="text" class="form-control" id="username" placeholder="Ingrese su usuario" required>
+                            <label for="username" class="form-label" data-translate="Usuario">Usuario</label>
+                            <input type="text" class="form-control" id="username"  required>
                         </div>
                         <div class="mb-3">
-                            <label for="email" class="form-label">Correo Electrónico</label>
-                            <input type="email" class="form-control" id="email" placeholder="Ingrese su correo" required>
+                            <label for="email" class="form-label" data-translate="Email">Correo Electrónico</label>
+                            <input type="email" class="form-control" id="email"  required>
                         </div>
                         <div class="mb-3">
-                            <label for="password" class="form-label">Contraseña</label>
-                            <input type="password" class="form-control" id="password" placeholder="Ingrese su contraseña" required>
+                            <label for="password" class="form-label" data-translate="Password">Contraseña</label>
+                            <input type="password" class="form-control" id="password"  required>
                         </div>
-                        <button type="button" id="registerBtn" class="btn btn-primary">Registrar</button>
+                        <button type="button" id="registerBtn" class="btn btn-primary" data-translate="Register">Registrar</button>
                     </form>
                 </div>
             </div>
@@ -124,8 +133,8 @@
      <section class="hero-section">
         <!-- Left Side -->
         <div class="hero-left">
-            <h1 class="hero-title">Nueva colección de invierno</h1>
-            <a href="compras.html" class="hero-button">Comprar ahora</a>
+            <h1 class="hero-title" data-translate="HeroTitle">Nueva colección de invierno</h1>
+            <a href="compras.html" class="hero-button" data-translate="BuyNow">Comprar ahora</a>
         </div>
         
         <!-- Right Side -->
@@ -315,5 +324,6 @@
 
     <!-- Custom JS -->
     <script src="script.js"></script>
+    <script src="translationsScript.js"></script>
 </body>
 </html>
